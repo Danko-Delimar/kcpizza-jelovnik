@@ -1,6 +1,15 @@
 <script>
 	let src = "./images/jelovnik.svg"
 	let jelovnik = true
+	let isMobile
+
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  	// true for mobile device
+		isMobile = true
+	} else {
+	// false for not mobile device
+		isMobile = false
+	}
 
 	const toggleButton = (page) => {
 		if (page === "jelovnik") {
@@ -13,9 +22,9 @@
 	}
 </script>
 
-<main>
+<main class={isMobile ? "main-mobile" : "main-pc"}>
 	<h1>KC PIZZA JELOVNIK</h1>
-	<p class="text-lg" id="address">Ulica Antuna Nemčića 2, 48000 Koprivnica</p>
+	<p id="address">Ulica Antuna Nemčića 2, 48000 Koprivnica</p>
 	<div class="buttons">
 		<button on:click={() => toggleButton("jelovnik")} id={jelovnik ? "button" : "button-deactivated"}>Jelovnik</button>
 		<button on:click={() => toggleButton("ponude")} id={!jelovnik ? "button" : "button-deactivated"}>Posebne ponude</button>
@@ -24,12 +33,21 @@
 </main>
 
 <style>
-	main {
+	.main-mobile {
 		text-align: center;
 		padding: 1em;
 		margin: 0 auto;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.main-pc {
+		text-align: center;
+		padding: 1em;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+		zoom: 200%;
 	}
 
 	h1 {
