@@ -1,1 +1,1 @@
-#App for a local pizza place in svelte
+App for a local pizza place in svelte
