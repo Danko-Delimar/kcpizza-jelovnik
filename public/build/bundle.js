@@ -363,23 +363,23 @@ var app = (function () {
     			t6 = text("Posebne ponude");
     			t7 = space();
     			img = element("img");
-    			attr_dev(h1, "class", "svelte-1cjg2pb");
+    			attr_dev(h1, "class", "svelte-z9zbkc");
     			add_location(h1, file, 25, 1, 561);
     			attr_dev(p, "id", "address");
-    			attr_dev(p, "class", "svelte-1cjg2pb");
+    			attr_dev(p, "class", "svelte-z9zbkc");
     			add_location(p, file, 26, 1, 589);
     			attr_dev(button0, "id", button0_id_value = /*jelovnik*/ ctx[1] ? "button" : "button-deactivated");
-    			attr_dev(button0, "class", "svelte-1cjg2pb");
+    			attr_dev(button0, "class", "svelte-z9zbkc");
     			add_location(button0, file, 28, 2, 675);
     			attr_dev(button1, "id", button1_id_value = !/*jelovnik*/ ctx[1] ? "button" : "button-deactivated");
-    			attr_dev(button1, "class", "svelte-1cjg2pb");
+    			attr_dev(button1, "class", "svelte-z9zbkc");
     			add_location(button1, file, 29, 2, 793);
-    			attr_dev(div, "class", "buttons");
+    			attr_dev(div, "class", "buttons svelte-z9zbkc");
     			add_location(div, file, 27, 1, 651);
     			if (img.src !== (img_src_value = /*src*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Slika jelovnika");
     			add_location(img, file, 31, 1, 923);
-    			attr_dev(main, "class", main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-1cjg2pb"));
+    			attr_dev(main, "class", main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-z9zbkc"));
     			add_location(main, file, 24, 0, 508);
     		},
     		l: function claim(nodes) {
@@ -422,7 +422,7 @@ var app = (function () {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*isMobile*/ 4 && main_class_value !== (main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-1cjg2pb"))) {
+    			if (dirty & /*isMobile*/ 4 && main_class_value !== (main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-z9zbkc"))) {
     				attr_dev(main, "class", main_class_value);
     			}
     		},

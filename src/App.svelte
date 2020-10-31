@@ -57,6 +57,11 @@
 		font-weight: 100;
 	}
 
+	.buttons {
+		margin-left: 4em
+		
+	}
+
 	#address {
 		color:#3E2A12;
 		font-size: 1em;
@@ -74,7 +79,6 @@
 		border-right: none;
 		border-top:none;
 		border-left: none;
-		margin: 3em;
 	}
 
 	#button-deactivated {
