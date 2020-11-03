@@ -327,11 +327,12 @@ var app = (function () {
 
     function create_fragment(ctx) {
     	let main;
+    	let div1;
     	let h1;
     	let t1;
     	let p;
     	let t3;
-    	let div;
+    	let div0;
     	let button0;
     	let t4;
     	let button0_id_value;
@@ -349,13 +350,14 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			main = element("main");
+    			div1 = element("div");
     			h1 = element("h1");
     			h1.textContent = "KC PIZZA JELOVNIK";
     			t1 = space();
     			p = element("p");
     			p.textContent = "Ulica Antuna Nemčića 2, 48000 Koprivnica";
     			t3 = space();
-    			div = element("div");
+    			div0 = element("div");
     			button0 = element("button");
     			t4 = text("Jelovnik");
     			t5 = space();
@@ -363,42 +365,44 @@ var app = (function () {
     			t6 = text("Posebne ponude");
     			t7 = space();
     			img = element("img");
-    			attr_dev(h1, "class", "svelte-z9zbkc");
-    			add_location(h1, file, 25, 1, 561);
+    			attr_dev(h1, "class", "svelte-1f2p7s0");
+    			add_location(h1, file, 26, 2, 595);
     			attr_dev(p, "id", "address");
-    			attr_dev(p, "class", "svelte-z9zbkc");
-    			add_location(p, file, 26, 1, 589);
+    			attr_dev(p, "class", "svelte-1f2p7s0");
+    			add_location(p, file, 27, 2, 625);
     			attr_dev(button0, "id", button0_id_value = /*jelovnik*/ ctx[1] ? "button" : "button-deactivated");
-    			attr_dev(button0, "class", "svelte-z9zbkc");
-    			add_location(button0, file, 28, 2, 675);
+    			attr_dev(button0, "class", "svelte-1f2p7s0");
+    			add_location(button0, file, 29, 3, 715);
     			attr_dev(button1, "id", button1_id_value = !/*jelovnik*/ ctx[1] ? "button" : "button-deactivated");
-    			attr_dev(button1, "class", "svelte-z9zbkc");
-    			add_location(button1, file, 29, 2, 793);
-    			attr_dev(div, "class", "buttons svelte-z9zbkc");
-    			add_location(div, file, 27, 1, 651);
+    			attr_dev(button1, "class", "svelte-1f2p7s0");
+    			add_location(button1, file, 30, 3, 835);
+    			attr_dev(div0, "class", "buttons svelte-1f2p7s0");
+    			add_location(div0, file, 28, 2, 689);
     			if (img.src !== (img_src_value = /*src*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Slika jelovnika");
-    			add_location(img, file, 31, 1, 923);
-    			attr_dev(main, "class", main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-z9zbkc"));
-    			add_location(main, file, 24, 0, 508);
+    			add_location(img, file, 32, 2, 969);
+    			add_location(div1, file, 25, 1, 586);
+    			attr_dev(main, "class", main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-1f2p7s0"));
+    			add_location(main, file, 24, 0, 532);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
-    			append_dev(main, h1);
-    			append_dev(main, t1);
-    			append_dev(main, p);
-    			append_dev(main, t3);
-    			append_dev(main, div);
-    			append_dev(div, button0);
+    			append_dev(main, div1);
+    			append_dev(div1, h1);
+    			append_dev(div1, t1);
+    			append_dev(div1, p);
+    			append_dev(div1, t3);
+    			append_dev(div1, div0);
+    			append_dev(div0, button0);
     			append_dev(button0, t4);
-    			append_dev(div, t5);
-    			append_dev(div, button1);
+    			append_dev(div0, t5);
+    			append_dev(div0, button1);
     			append_dev(button1, t6);
-    			append_dev(main, t7);
-    			append_dev(main, img);
+    			append_dev(div1, t7);
+    			append_dev(div1, img);
 
     			if (!mounted) {
     				dispose = [
@@ -422,7 +426,7 @@ var app = (function () {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*isMobile*/ 4 && main_class_value !== (main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-z9zbkc"))) {
+    			if (dirty & /*isMobile*/ 4 && main_class_value !== (main_class_value = "" + (null_to_empty(/*isMobile*/ ctx[2] ? "main-mobile" : "main-pc") + " svelte-1f2p7s0"))) {
     				attr_dev(main, "class", main_class_value);
     			}
     		},
