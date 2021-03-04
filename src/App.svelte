@@ -1,5 +1,5 @@
 <script>
-	let src = "./images/jelovnik.svg"
+	let src = "./images/jelovnik1_a3.svg"
 	let jelovnik = true
 	let isMobile
 
@@ -14,10 +14,10 @@
 	const toggleButton = (page) => {
 		if (page === "jelovnik") {
 			jelovnik = true
-			src = "./images/jelovnik.svg"
+			src = "./images/jelovnik1_a3.svg"
 		} else if (page === "ponude") {
 			jelovnik = false
-			src = "./images/ponude.svg"
+			src = "./images/jelovnik2_a3.svg"
 		}
 	}
 </script>
@@ -26,8 +26,8 @@
 	<h1>KC PIZZA JELOVNIK</h1>
 	<p id="address">Ulica Antuna Nemčića 2, 48000 Koprivnica</p>
 	<div class="buttons">
-		<button on:click={() => toggleButton("jelovnik")} id={jelovnik ? "button" : "button-deactivated"}>Jelovnik</button>
-		<button on:click={() => toggleButton("ponude")} id={!jelovnik ? "button" : "button-deactivated"}>Posebne ponude</button>
+		<button on:click={() => toggleButton("jelovnik")} id={jelovnik ? "button" : "button-deactivated"}>Pizze</button>
+		<button on:click={() => toggleButton("ponude")} id={!jelovnik ? "button" : "button-deactivated"}>Sendviči/salate</button>
 	</div>
 	<img {src} alt="Slika jelovnika">
 </main>
@@ -58,7 +58,7 @@
 	}
 
 	.buttons {
-		margin-left: 4em
+		margin-left: 2em
 		
 	}
 
@@ -79,6 +79,7 @@
 		border-right: none;
 		border-top:none;
 		border-left: none;
+		margin: 3em;
 	}
 
 	#button-deactivated {
@@ -97,7 +98,7 @@
 
 	@media (min-width: 640px) {
 		main {
-			max-width: none;
+			max-width: 1080;
 		}
 	}
 </style>
